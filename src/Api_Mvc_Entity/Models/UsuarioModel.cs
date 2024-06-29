@@ -10,7 +10,7 @@
         public char SexoUsuario { get; set; }
         public string SenhaUsuario { get; set; }
         public string LembreteSenha { get; set; }
-        /*
+        
         public UsuarioModel(string NomeUsuario, DateOnly NascimentoUsuario, string EmailUsuario, string EnderecoUsuario, char SexoUsuario, string SenhaUsuario, string LembreteSenha)
         {
             this.NomeUsuario = NomeUsuario;
@@ -21,6 +21,5 @@
             this.SenhaUsuario = SenhaUsuario;
             this.LembreteSenha = LembreteSenha;
         }
-        */
     }
 }

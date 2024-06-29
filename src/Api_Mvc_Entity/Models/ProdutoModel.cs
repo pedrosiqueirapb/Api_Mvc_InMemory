@@ -9,7 +9,7 @@
         public int QuantidadeProduto { get; set; }
         public int AvaliacaoProduto { get; set; }
         public string CategoriaProduto { get; set; }
-        /*
+ 
         public ProdutoModel(string NomeProduto, double PrecoProduto, string DescricaoProduto, int QuantidadeProduto, int AvaliacaoProduto, string CategoriaProduto)
         {
             this.NomeProduto = NomeProduto;
@@ -19,6 +19,5 @@
             this.AvaliacaoProduto = AvaliacaoProduto;
             this.CategoriaProduto = CategoriaProduto;
         }
-        */
     }
 }
