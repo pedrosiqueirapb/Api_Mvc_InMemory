@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/Api_Mvc_Entity/.vs/Api_Mvc_Entity
+/src/Api_Mvc_Entity/obj
