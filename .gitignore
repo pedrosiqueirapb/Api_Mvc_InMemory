@@ -5,3 +5,4 @@
 /.vs
 /src/Api_Mvc_Entity/.vs/Api_Mvc_Entity
 /src/Api_Mvc_Entity/obj
+/src/Api_Mvc_Entity/bin/Debug/net8.0
