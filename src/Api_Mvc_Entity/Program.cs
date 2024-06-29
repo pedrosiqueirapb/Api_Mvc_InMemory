@@ -1,4 +1,7 @@
 
+using Api_Mvc_Entity.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace Api_Mvc_Entity
 {
     public class Program
@@ -10,6 +13,11 @@ namespace Api_Mvc_Entity
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+                opt.UseInMemoryDatabase("ApiDataBase")
+            );
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -26,7 +34,6 @@ namespace Api_Mvc_Entity
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
