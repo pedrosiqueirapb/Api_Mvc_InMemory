@@ -27,16 +27,16 @@ namespace Api_Mvc_Entity.Controllers
             return await _context.Usuario.ToListAsync();
         }
 
-        // GET: api/Usuario/pedrosiqueirapb@gmail.com
-        [HttpGet("{email}")]
-        public async Task<ActionResult<UsuarioModel>> GetUsuario(string email)
+        // GET: api/Usuario/1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<UsuarioModel>> GetUsuario(int id)
         {
             if (_context.Usuario == null)
             {
                 return NotFound();
             }
 
-            var usuario = await _context.Usuario.FindAsync(email);
+            var usuario = await _context.Usuario.FindAsync(id);
 
             if (usuario == null)
             {
