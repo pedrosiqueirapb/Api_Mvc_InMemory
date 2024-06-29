@@ -10,6 +10,18 @@ namespace Api_Mvc_Entity.Context
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<UsuarioModel>()
+                .Property(a => a.Id)
+                .ValueGeneratedOnAdd();
+            modelBuilder.Entity<ProdutoModel>()
+                .Property(b => b.Id)
+                .ValueGeneratedOnAdd();
+        }
+
         public DbSet<ProdutoModel> Produto { get; set; } = null;
         public DbSet<UsuarioModel> Usuario { get; set; } = null;
     }
